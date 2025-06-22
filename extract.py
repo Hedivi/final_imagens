@@ -1,8 +1,5 @@
-import numpy as np
-from pydicom import dcmread
 from radiomics import featureextractor
 import pandas as pd
-import numpy as np
 import SimpleITK as sitk
 import os
 

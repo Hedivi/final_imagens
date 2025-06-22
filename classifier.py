@@ -2,11 +2,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
-#from types import GeneratorType
-import numpy as np
 import pandas as pd
-import numpy as np
-import cv2
 import os
 
 PATH = './'
@@ -63,7 +59,7 @@ def classifier (function, data_train, data_test, target_train, target_test):
   return {'sensibilidade': round(float(sensibilidade), 4), 'especificidade': round(float(especificidade), 4), 'f1': round(float(f1), 4)}
 
 
-def process_data (count):
+def load_data (count):
 
     # Carrega dados
     df_train = pd.read_csv(PATH + f'folds_stratified_groupk/characteristic_train_{str(count)}.csv')
@@ -96,7 +92,7 @@ def main():
   for i in range(1,6):
 
     # Carrega os dados
-    data_train, data_test, target_train, target_test = process_data (i)
+    data_train, data_test, target_train, target_test = load_data (i)
 
     # Carrega os classificadores
     KNN = KNeighborsClassifier(n_neighbors=11)

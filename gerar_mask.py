@@ -53,7 +53,7 @@ def load_data(doc_path):
 
 
 # Realiza o processamento dos dados
-def process_data():
+def process_data(count):
 
     # Define os arquivos csv das imagens
     train_path = PATH + f'folds_stratified_groupk/fold{str(count)}_train.csv'
@@ -69,7 +69,7 @@ def process_data():
 def main():
 
     # Carrega e processa os dados
-    process_data()
+    process_data(1)
 
 main()
 
