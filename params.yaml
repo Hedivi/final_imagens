@@ -1,0 +1,13 @@
+imageType:
+  Original: {}
+
+featureClass:
+  firstorder: 
+  glcm: 
+  gldm: 
+  glrlm: 
+  glszm: 
+  ngtdm: 
+
+setting:
+  label: 1
