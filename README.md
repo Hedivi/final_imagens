@@ -76,4 +76,4 @@ A função 'classifier'  trata-se juntamente do treino e da classificação de u
 
 A função 'load_data' realiza o carregamento dos dados em CSV's com as características já extraídas e a separação dos dataframes com os dados e as labels, além da normalização dos dados.
 
-Por fim, a função 'main' carrega os dados e os classificadores a cada fold, calculando as métricas e as armazenando no arquivo [results.txt](./results.txt).
+Por fim, a função 'main' carrega os dados e os classificadores a cada fold, calculando as métricas e as armazenando no arquivo [results.csv](./results.csv).
